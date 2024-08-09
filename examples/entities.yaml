@@ -39,3 +39,16 @@ spec:
     message ExampleMessage {
       string example = 1;
     };
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-workshop
+  description: backstage.io workshop batch 4
+  annotations:
+    github.com/project-slug: 'Abhishekop722/backstage-workshop'
+spec:
+  type: service
+  lifecycle: production
+  owner: user:guest
+---

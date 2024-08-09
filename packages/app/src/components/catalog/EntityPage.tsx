@@ -53,6 +53,8 @@ import {
 
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
+import { EntityGithubActionsContent } from '@backstage-community/plugin-github-actions';
+import { EntityGithubInsightsContent } from '@roadiehq/backstage-plugin-github-insights';
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -148,6 +150,16 @@ const serviceEntityPage = (
 
     <EntityLayout.Route path="/ci-cd" title="CI/CD">
       {cicdContent}
+    </EntityLayout.Route>
+
+    <EntityLayout.Route path="/github-actions" title="GitHub Actions">
+      <EntityGithubActionsContent />
+    </EntityLayout.Route>
+
+    <EntityLayout.Route 
+      path="/code-insights"
+      title="Code Insights">
+      <EntityGithubInsightsContent />
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/api" title="API">
