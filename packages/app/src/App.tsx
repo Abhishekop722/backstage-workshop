@@ -42,6 +42,7 @@ import LightIcon from '@material-ui/icons/WbSunny';
 import { HomepageCompositionRoot } from '@backstage/plugin-home';
 import { HomePage } from './components/home/HomePage';
 import { githubAuthApiRef } from '@backstage/core-plugin-api';
+import { MyHubPage } from '@internal/backstage-plugin-my-hub';
 
 const app = createApp({
   apis,
@@ -125,6 +126,7 @@ const routes = (
     </Route>
     <Route path="/settings" element={<UserSettingsPage />} />
     <Route path="/catalog-graph" element={<CatalogGraphPage />} />
+    <Route path="/my-hub" element={<MyHubPage />} />
   </FlatRoutes>
 );
 
