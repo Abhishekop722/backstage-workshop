@@ -1,6 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
+  annotations:
+    backstage.io/techdocs-ref: dir:.
   name: backstage-workshop
   description: An example of a Backstage application.
   # Example for optional annotations
